@@ -23,6 +23,12 @@ KCM.SimpleKCM {
     property alias cfg_use_24_hour_format: use24HourFormat.checked
     property alias cfg_time_character: timeCharacter.text
     property alias cfg_date_format: dateFormat.text
+    property alias cfg_day_font_family: dayFont.family
+    property alias cfg_date_font_family: dateFont.family
+    property alias cfg_time_font_family: timeFont.family
+    property alias cfg_day_font_weight: dayFont.weight
+    property alias cfg_date_font_weight: dateFont.weight
+    property alias cfg_time_font_weight: timeFont.weight
 
     Kirigami.FormLayout {
 
@@ -34,6 +40,12 @@ KCM.SimpleKCM {
         QQC2.CheckBox {
             id: showDay
             Kirigami.FormData.label: i18n("Anzeigen:")
+        }
+        FontPicker {
+            id: dayFont
+            Kirigami.FormData.label: i18n("Schriftart:")
+            defaultName: "Anurati"
+            enabled: showDay.checked
         }
         QQC2.SpinBox {
             id: dayFontSize
@@ -62,6 +74,12 @@ KCM.SimpleKCM {
         QQC2.CheckBox {
             id: showDate
             Kirigami.FormData.label: i18n("Anzeigen:")
+        }
+        FontPicker {
+            id: dateFont
+            Kirigami.FormData.label: i18n("Schriftart:")
+            defaultName: "Poppins"
+            enabled: showDate.checked
         }
         QQC2.SpinBox {
             id: dateFontSize
@@ -98,6 +116,12 @@ KCM.SimpleKCM {
         QQC2.CheckBox {
             id: showTime
             Kirigami.FormData.label: i18n("Anzeigen:")
+        }
+        FontPicker {
+            id: timeFont
+            Kirigami.FormData.label: i18n("Schriftart:")
+            defaultName: "Poppins"
+            enabled: showTime.checked
         }
         QQC2.SpinBox {
             id: timeFontSize

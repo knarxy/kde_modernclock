@@ -22,6 +22,7 @@ Dieser Fork von [prayag2/kde_modernclock](https://github.com/prayag2/kde_modernc
 - 24-Stunden-Format standardmäßig aktiv
 - Kein veraltetes `plasma5support`-Datenmodul mehr – die Uhrzeit wird per QML-Timer aktualisiert (korrekt auch nach Standby oder Zeitzonenwechsel)
 - Einstellungsdialog im aktuellen Plasma-6-Stil (`KCM.SimpleKCM`, `Kirigami.FormLayout`) mit deutschen Texten und „Standardwerte“-Unterstützung
+- Schriftart und -stärke für Wochentag, Datum und Uhrzeit frei wählbar (Standard: Anurati bzw. Poppins)
 - Eigene Plugin-ID `com.github.knarxy.modernclock`, damit der Fork parallel zum Original installiert werden kann
 
 ## Installation

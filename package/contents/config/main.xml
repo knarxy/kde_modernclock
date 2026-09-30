@@ -51,5 +51,23 @@
         <entry name="time_character" type="String">
             <default>-</default>
         </entry>
+        <entry name="day_font_family" type="String">
+            <default></default>
+        </entry>
+        <entry name="day_font_weight" type="Int">
+            <default>400</default>
+        </entry>
+        <entry name="date_font_family" type="String">
+            <default></default>
+        </entry>
+        <entry name="date_font_weight" type="Int">
+            <default>400</default>
+        </entry>
+        <entry name="time_font_family" type="String">
+            <default></default>
+        </entry>
+        <entry name="time_font_weight" type="Int">
+            <default>400</default>
+        </entry>
     </group>
 </kcfg>
