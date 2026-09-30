@@ -1,3 +1,5 @@
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
@@ -25,12 +27,13 @@ RowLayout {
                 .filter((f, i, all) => all.indexOf(f) === i)
                 .map(f => ({ text: f, value: f })))
 
-        delegate: QQC2.ItemDelegate {
-            required property var modelData
+        // MenuItem wie im Plasma-Stil, dessen Popup ein Menu ist; jeder
+        // Eintrag wird zur Vorschau in seiner eigenen Schrift dargestellt
+        delegate: QQC2.MenuItem {
+            required property var model
             required property int index
-            width: ListView.view.width
-            text: modelData.text
-            font.family: modelData.value || root.defaultName
+            text: model.text
+            font.family: model.value || root.defaultName
             highlighted: familyBox.highlightedIndex === index
         }
 
