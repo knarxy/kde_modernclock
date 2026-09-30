@@ -70,6 +70,9 @@ PlasmoidItem {
 
                 font.pixelSize: Plasmoid.configuration.day_font_size
                 font.letterSpacing: Plasmoid.configuration.day_letter_spacing
+                // Qt setzt den Abstand auch hinter den letzten Buchstaben; links
+                // gleich viel Platz lassen, damit der Text optisch mittig bleibt
+                leftPadding: font.letterSpacing
                 font.family: Plasmoid.configuration.day_font_family || font_anurati.name
                 font.weight: Plasmoid.configuration.day_font_weight
                 color: Plasmoid.configuration.day_font_color
@@ -86,6 +89,7 @@ PlasmoidItem {
 
                 font.pixelSize: Plasmoid.configuration.date_font_size
                 font.letterSpacing: Plasmoid.configuration.date_letter_spacing
+                leftPadding: font.letterSpacing
                 font.family: Plasmoid.configuration.date_font_family || font_poppins.name
                 font.weight: Plasmoid.configuration.date_font_weight
                 color: Plasmoid.configuration.date_font_color
@@ -109,6 +113,7 @@ PlasmoidItem {
                 font.weight: Plasmoid.configuration.time_font_weight
                 color: Plasmoid.configuration.time_font_color
                 font.letterSpacing: Plasmoid.configuration.time_letter_spacing
+                leftPadding: font.letterSpacing
                 horizontalAlignment: Text.AlignHCenter
                 anchors.horizontalCenter: parent.horizontalCenter
             }
