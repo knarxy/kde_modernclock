@@ -22,7 +22,7 @@
             <default>3</default>
         </entry>
         <entry name="date_format" type="String">
-            <default>dd MMM yyyy</default>
+            <default>dd. MMMM yyyy</default>
         </entry>
         <entry name="show_date" type="Bool">
             <default>true</default>
@@ -46,10 +46,10 @@
             <default>#FFFFFF</default>
         </entry>
         <entry name="use_24_hour_format" type="Bool">
-            <default>false</default>
+            <default>true</default>
         </entry>
         <entry name="time_character" type="String">
             <default>-</default>
         </entry>
     </group>
-</kcfg> 
+</kcfg>

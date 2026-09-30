@@ -14,17 +14,22 @@
   <img src="https://github.com/Prayag2/kde_modernclock/blob/main/assets/ss.png"/>
 </p>
 
-## Installation
-#### KDE Store (Preferred way)
-1. Right click on the desktop
-2. Click on "Add Widgets"
-3. Click on "Get New Widgets"
-4. Click on "Download New Plasma Widgets"
-5. Search for "Modern Clock"
-6. Click on "Install" and you're done!
+## Deutscher Fork
 
-#### From this repository
-1. Clone this repository  
-`git clone https://github.com/prayag2/kde_modernclock && cd kde_modernclock/`  
-2. Install using the script  
-`kpackagetool5 -i package`
+Dieser Fork von [prayag2/kde_modernclock](https://github.com/prayag2/kde_modernclock) ist für Plasma 6 optimiert:
+
+- Wochentage und Monatsnamen immer auf Deutsch (z. B. „DIENSTAG“, „30. SEPTEMBER 2026“), unabhängig von der Systemsprache
+- 24-Stunden-Format standardmäßig aktiv
+- Kein veraltetes `plasma5support`-Datenmodul mehr – die Uhrzeit wird per QML-Timer aktualisiert (korrekt auch nach Standby oder Zeitzonenwechsel)
+- Einstellungsdialog im aktuellen Plasma-6-Stil (`KCM.SimpleKCM`, `Kirigami.FormLayout`) mit deutschen Texten und „Standardwerte“-Unterstützung
+- Eigene Plugin-ID `com.github.knarxy.modernclock`, damit der Fork parallel zum Original installiert werden kann
+
+## Installation
+
+```sh
+git clone https://github.com/knarxy/kde_modernclock && cd kde_modernclock/
+kpackagetool6 -t Plasma/Applet -i package     # erstmalig
+kpackagetool6 -t Plasma/Applet -u package     # Update
+```
+
+Danach auf dem Desktop „Widgets hinzufügen…“ → „Moderne Uhr“.

@@ -4,19 +4,26 @@
             {
                 "Email": "prayagjain2@gmail.com",
                 "Name": "Prayag Jain"
+            },
+            {
+                "Name": "knarxy"
             }
         ],
         "Category": "Date and Time",
-        "Description": "A modern looking clock widget for your Desktop!",
+        "Description": "A modern looking clock widget for your Desktop (German fork)",
+        "Description[de]": "Eine moderne Uhr für den Desktop – mit deutschen Wochentagen",
         "Icon": "clock",
-        "Id": "com.github.prayag2.modernclock",
-        "License": "GPLv3",
-        "Name": "Modern Clock",
-        "Version": "1.0.0",
-        "Website": "https://github.com/prayag2/kde_modernclock"
-        
+        "Id": "com.github.knarxy.modernclock",
+        "License": "GPL-3.0-or-later",
+        "Name": "Modern Clock (DE)",
+        "Name[de]": "Moderne Uhr",
+        "Version": "2.0.0",
+        "Website": "https://github.com/knarxy/kde_modernclock"
     },
     "X-Plasma-API-Minimum-Version": "6.0",
-    "X-Plasma-Provides": "org.kde.plasma.time,org.kde.plasma.date",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.time",
+        "org.kde.plasma.date"
+    ],
     "KPackageStructure": "Plasma/Applet"
 }
